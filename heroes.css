@@ -1,0 +1,64 @@
+body{
+	background-color: black;
+}
+.b1{
+		position:absolute;
+    /*display: inline-block;*/
+    width: 100%;
+    height: auto;
+    opacity:0.25;
+	left:0;
+  z-index: -2;
+	top:0;
+	border:0;
+}
+
+.heading{
+	position:absolute;
+	top:0%;
+	left:5%;
+	color:white;
+	font-size: 50px;
+	font-family:"BEBAS___" ;
+}
+
+@font-face {
+    font-family:"BEBAS___" ;
+    src: url("BEBAS___.ttf") ;
+}
+
+.img img{
+  margin-left: 0px;
+  position: absolute;
+  width:380px;
+  height:350px;
+  align-self: center;
+  top:30%;
+  left:5%;
+	
+	box-shadow: 0px 0px 20px white;
+}
+
+.description{
+	position: absolute;
+  top:25%;
+  left:40%;
+  opacity: 1;
+  font-family: "helvetica";
+  font-weight: bold;
+  font-size: 25px;
+	color:white;
+	font-family:serif;
+}
+.home{
+  position:absolute;
+  top:1%;
+  right:0.6%;
+  height:61px;
+  width:60px;
+  padding-bottom: 0.8px;
+  opacity: 0.97;
+  z-index:10;
+	border:0;
+	box-shadow: none;
+}

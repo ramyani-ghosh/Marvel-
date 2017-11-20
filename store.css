@@ -1,0 +1,262 @@
+body{
+  background-color:#1a1a28;
+
+}
+@font-face {
+    font-family:"BEBAS___" ;
+    src: url("BEBAS___.ttf") ;
+}
+@font-face {
+    font-family:"Autumn in November" ;
+    src: url("Autumn in November.ttf") ;
+}
+
+
+.home{
+  position:fixed;
+  top:1%;
+  right:0.6%;
+  height:61px;
+  width:60px;
+  padding-bottom: 0.8px;
+  opacity: 0.97;
+  z-index:10;
+
+}
+
+.cart{
+  position:fixed;
+  top:2%;
+  right:28%;
+  height:50px;
+  width:55px;
+  padding-bottom: 0.8px;
+  display: none;
+  opacity: 0.9;
+  z-index:10;
+
+}
+
+.dispname{
+  position:fixed;
+  top:2%;
+  right:7%;
+  font-size: 26px;
+  width:16%;
+  height: 7%;
+  padding: 3px;
+  padding-left: 25px;
+  background-color: #cc480c;
+  font-family:"BEBAS___" ;
+  color:white;
+  opacity: 0.6;
+  z-index:10;
+}
+#header{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background-color: #f2601d;
+  opacity: 0.9;
+  z-index:5 ;
+}
+#header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+#header li {
+    float: left;
+}
+#header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 34px;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-family:"BEBAS___";
+}
+#header li a:hover {
+    background-color: #db5111;
+}
+#offers{
+  z-index:1;
+  position: absolute;
+  top:100px;
+  margin-left: 0;
+
+  height:280px;
+  padding-left: 10px;
+  width:100%;
+  background-color:#0f0f1c;
+
+}
+#offers:hover{
+    background-color:#05050a;
+    transition: 1s;
+}
+#offers h1{
+  font-size:60px;
+  color: white;
+  font-family:"Autumn in November";
+}
+#text{
+  padding-left: 30px;
+  color: white;
+  font-size: 30px;
+
+}
+#offers .magimg{
+  position: absolute;
+  right:0;
+  top:0;
+  width:760px;
+  height:280px;
+  -webkit-mask-image:-webkit-linear-gradient(right, rgba(0,0,0,1),rgba(0,0,0,0));
+}
+#line{
+  z-index:3;
+  width:100%;
+  margin-left: 12px;
+  position: absolute;
+  top:450px;
+}
+#featured{
+  position: absolute;
+  top:365px;
+  left:20px;
+  font-family: "BEBAS___";
+  font-size: 40px;
+  color: #3e3e51;
+}
+#items{
+
+  margin-top: 30px;
+  padding-left: 10px;
+  position: absolute;
+  top:460px;
+}
+
+#confirm{
+  border: 0px;
+  height:30px;
+  width:200px;
+  margin-top: 15px;
+  padding: 4px;
+  background-color: #f2601d /*#33334c*/;
+  font-size: 17px;
+  color: white;
+  box-shadow: 0;
+}
+#confirm:hover{
+  box-shadow: 1px 2px 5px black;
+  cursor: pointer;
+}
+.floating-box {
+    display: inline-block;
+    width: 300px;
+    height: 340px;
+    margin: 10px;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.floating-box:hover{
+  transition: 0.4s;
+  opacity: 0.6;
+}
+.floating-box #title{
+  color:white;
+  font-family:sans-serif;
+  font-size: :25px;
+  font-weight: bold;
+}
+.floating-box #price{
+  padding-right: 28px;
+  color:white;
+  text-align: right;
+  font-style: italic;
+  text-shadow: 1px 2px #5c5d60;
+}
+.floating-box img{
+  box-shadow: 7px 10px 15px black;
+  width: 90%;
+  height: 90%;
+
+}
+#prod{
+  /*border: 5px solid #1c1e44 ;*/
+  position: fixed;
+  margin:auto;
+  bottom:5%;
+  left:20%;
+  padding: 60px;
+  width:50%;
+  height:60%;
+  box-shadow: 0px 0px 900px black;
+  background-color: rgba(224, 221, 215,0.93);
+  transition: 0.6s;
+}
+#prod #close{
+  position: absolute;
+  top:5px;
+  right:5px;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: #6d6d75;
+  cursor: pointer;
+  font-weight:bolder;
+}
+#prod img{
+  display: inline-block;
+  height:100%;
+  width:100%;
+
+}
+#prod #prodimg{
+  border: 1px solid gray;
+  top:30%;
+  left:30%;
+  width: 200px;
+  height: 240px;
+  background-color: white;
+  padding: 20px;
+
+}
+#prod #size{
+  font-family: sans-serif;
+  font-style: bold;
+  font-size: 120%;;
+  color: #6d6d75;
+}
+#prod #size select{
+  font-family: sans-serif;
+  font-style: bold;
+  font-size: 106%;
+  color: #6d6d75;
+}
+#prod #desc{
+  position: absolute;
+  top:10%;
+  left:45%;
+  font-size: 104%;
+}
+#prodtitle{
+  font-family: fantasy;
+  font-size: 200%;
+  color: #363e4c;
+}
+#prodabout{
+  color:#575f6d;
+  font-family: sans-serif;
+}
+#prodprice{
+  font-size: 140%;
+  font-family: fantasy;
+  color: #363e4c;
+
+}

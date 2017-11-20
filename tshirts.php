@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>T-shirts</title>
+		<link rel="stylesheet" type="text/css" href="store.css">
+		<link rel="shortcut icon" href="marvelogo.png" >
+		<script src="store.js"> </script>
+	</head>
+
+
+	</body>
+	<a href="marvelhome.php"><img src="home.png"class="home" src="home.png" ></img></a>
+	<a href="addtocart.php"><img src="cart.png"class="cart"  ></img></a>
+
+
+
+
+
+		<div id="header">
+			<ul>
+  			<li><a class="active" href="store.php">STORE</a></li>
+				<li><a class="active" href="tshirts.php">T-SHIRTS</a></li>
+				<!--<li><a class="active" href="stationery.html">STATIONERY</a></li>-->
+				<li><a class="active" href="other.php">OTHER</a></li>
+			</ul>
+		</div>
+
+		<div id="offers">
+			<h1>Coming soon...</h1>
+			<p id="text">Special line of comic books.</p>
+			<img class="magimg" src="comics.jpg" alt="Marvel comic books"></img>
+		</div>
+		<center><hr id="line"/>
+		</center>
+		<pre id="featured">OFFICIAL MERCHANDISE: T-SHIRTS</pre>
+
+
+	<div id='prod' style="opacity:0;z-index:-1">
+			<div id="prodimg"><img id='prodpic' src="" alt="merch" /></div>
+			<div id='close' onclick="closeproduct()">X</div>
+
+		<div id='desc'>
+
+			<p id='prodtitle'>TITLE</p>
+			<p id='prodabout'>Description</p>
+			<p id='prodprice'>PRICE</p>
+
+			<div id='size'>SIZE:
+			<select name="size">
+				<option value="XS">XS</option>
+				<option value="S">S</option>
+				<option value="M">M</option>
+				<option value="L">L</option>
+				<option value="XL">XL</option>
+			</select>
+			<br>
+			<a href="bill.html"><button id="confirm" >Proceed to checkout</button></a>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="items">
+
+		<div class="floating-box"  onclick="productinfo(1)"><img id="image" src="Merch/ironman_tee.jpeg" alt="merch" />
+			<p id="title">Iron Man Heart T-shirt, black</p> <p id="price">Rs.499</p>
+			<p id="about" style="opacity:0;position:fixed;">100% Cotton,printed black t-shirt, round neck,regular fit, half sleeve </p></div>
+
+		<div class="floating-box"  onclick="productinfo(3)"><img id="image" src="Merch/gog_tee1.jpg" alt="merch"/>
+				<p id="title">Guardians of the Galaxy T-shirt, grey</p> <p id="price">Rs.405</p>
+				<p id="about" style="opacity:0;position:fixed;">Purely Cotton,Printed Grey T-shirt,Half Sleeve </p></div>
+
+
+			<div class="floating-box" onclick="productinfo(5)"><img id="image" src="Merch/cap_tee1.jpg" alt="merch"/>
+				<p id="title">Captain America Shield T-shirt, blue</p> <p id="price">Rs.599</p>
+				<p id="about" style="opacity:0;position:fixed;">Navy Blue Long T-shirt, Small Round Neck,Half Sleeve </p></div>
+
+
+				<div class="floating-box" onclick="productinfo(7)"><img id="image" src="Merch/drstrange_tee2.jpg" alt="merch"/>
+					<p id="title">Doctor Strange t-shirt</p> <p id="price">Rs.499</p>
+					<p id="about" style="opacity:0;position:fixed;">Purely Cotton,Printed Black T-shirt, Round Neck,Short Sleeve </p></div>
+
+
+				<div class="floating-box" onclick="productinfo(9)"><img id="image" src="Merch/hulk_tee1.jpg" alt="merch"/>
+						<p id="title">The Incredible Hulk t-shirt</p> <p id="price">Rs.599</p>
+						<p id="about" style="opacity:0;position:fixed;">Dark Grey Printed, T-shirt, Round Neck,half sleeve </p></div>
+
+				<div class="floating-box" onclick="productinfo(11)"><img id="image" src="Merch/ironman_tee_2.jpg" alt="merch"/>
+						<p id="title">Iron Man T-shirt</p> <p id="price">Rs.559</p>
+						<p id="about" style="opacity:0;position:fixed;">100% Cotton,Red and Yellow T-shirt,Round Neck,Regular Fit, Half Sleeve </p></div>
+
+				<div class="floating-box" onclick="productinfo(13)"><img id="image" src="Merch/marvel_tee4.jpg" alt="merch"/>
+					<p id="title">Marvel t-shirt, black</p> <p id="price">Rs.604</p>
+					<p id="about" style="opacity:0;position:fixed;">Black Special Edition Comic T-shirt, Round Neck,Tight Fit, Half Sleeve</p></div>
+
+					<div class="floating-box" onclick="productinfo(15)"><img id="image" src="Merch/marvel_tee2.jpg" alt="merch"/>
+						<p id="title">Marvel comics t-shirt, grey</p> <p id="price">Rs.425</p>
+						<p id="about" style="opacity:0;position:fixed;">100% Cotton,Fully Printed Dark Grey T-shirt, Round Neck,Regular Fit, Half Sleeve </p></div>
+
+					<div class="floating-box" onclick="productinfo(17)"><img id="image" src="Merch/marvel_tee3.jpg" alt="merch"/>
+						<p id="title">Marvel superheroes t-shirt, white</p> <p id="price">Rs.525</p>
+						<p id="about" style="opacity:0;position:fixed;">100% Cotton,Fully Printed White T-shirt, Round Neck,Regular Fit, Half Sleeve </p></div>
+
+					<div class="floating-box" onclick="productinfo(19)"><img id="image" src="Merch/cap_tee1_g.png" alt="merch"/>
+						<p id="title">Captain America Shield t-shirt, grey</p> <p id="price">Rs.425</p>
+						<p id="about" style="opacity:0;position:fixed;">Purely Cotton,Printed Grey T-shirt, Round Neck,Short Sleeve </p></div>
+
+					<div class="floating-box" onclick="productinfo(21)"><img id="image" src="Merch/drstrange_tee1.jpg" alt="merch"/>
+					<p id="title">Doctor Stephen Strange t-shirt</p> <p id="price">Rs.525</p>
+					<p id="about" style="opacity:0;position:fixed;">Purely Cotton,Black T-shirt,Pixelated Print,Short Sleeve </p></div>
+
+					<div class="floating-box" onclick="productinfo(23)"><img id="image" src="Merch/gog_tee2.jpg" alt="merch"/>
+					<p id="title">Guardians of The Galaxy, t-shirt</p> <p id="price">Rs.595</p>
+					<p id="about" style="opacity:0;position:fixed;">100% Cotton,Printed Black T-shirt, Round Neck,Regular Fit, Half Sleeve </p></div>
+
+					<div class="floating-box" onclick="productinfo(25)"><img id="image" src="Merch/hulk_tee2.jpg" alt="merch"/>
+						<p id="title">Hulk t-shirt, black</p> <p id="price">Rs.599</p>
+						<p id="about" style="opacity:0;position:fixed;">Purely Cotton,Black Long T-shirt,Round Neck </p></div>
+
+
+					<div class="floating-box" onclick="productinfo(27)"><img id="image" src="Merch/marvel_tee1.jpeg" alt="merch"/>
+						<p id="title">Marvel's Avengers T-shirt</p> <p id="price">Rs.559</p>
+						<p id="about" style="opacity:0;position:fixed;">100% Cotton,Printed Dark Grey T-shirt,Tight fit,Short Sleeve </p></div>
+
+					<div class="floating-box" onclick="productinfo(29)"><img id="image" src="Merch/spidey_tee2.jpg" alt="merch"/>
+							<p id="title">Spiderman t-shirt, red</p> <p id="price">Rs.499</p>
+							<p id="about" style="opacity:0;position:fixed;">100% Cotton,Bright Red Short T-shirt, Small Round Neck,regular fit, half sleeve </p></div>
+
+					<div class="floating-box" onclick="productinfo(31)"><img id="image" src="Merch/scar_witch_tee.jpg" alt="merch"/>
+							<p id="title">Scarlet Witch T-shirt</p> <p id="price">Rs.359</p>
+							<p id="about" style="opacity:0;position:fixed;">Short Printed Black T-shirt, Round Neck,Regular Fit, Half Sleeve</p></div>
+
+					<div class="floating-box" onclick="productinfo(33)"><img id="image" src="Merch/spidey_tee1.jpg" alt="merch"/>
+							<p id="title">Spiderman, Peter Parker T-shirt, black</p> <p id="price">Rs.359</p>
+							<p id="about" style="opacity:0;position:fixed;">100% Cotton,Printed Long Black T-shirt, Round Neck,Tight Fit, Half Sleeve </p></div>
+
+
+		</div>
+
+</body>
+
+</html>

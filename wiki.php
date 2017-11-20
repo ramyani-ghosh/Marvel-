@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<?php
+	session_start();
+
+	if (!isset($_SESSION['username'])) {
+		$_SESSION['msg'] = "You must log in first";
+		header('location: login.php');
+	}
+
+	if (isset($_GET['logout'])) {
+		session_destroy();
+		unset($_SESSION['username']);
+		header("location: marvelhome2.php");
+	}
+
+?>
+<html>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<head>
+		<title>Marvel Heroes Wiki</title>
+		<link rel="stylesheet" type="text/css" href="wiki.css">
+		<link rel="shortcut icon" href="marvelogo.png" >
+
+	</head>
+
+	<body>
+    <a href="marvelhome.php"><img src="home.png" class="home" src="home.png" ></img></a>
+
+		<div id="header">
+			<p class="heading">MARVEL WIKI</p>
+			<p class="text">GET TO KNOW YOUR SUPERHEROES BETTER</p>
+		<div>
+    <div id="blackbody"> <div>
+		<center>
+		<table>
+		<tr>
+			     <td class="img"id="img1">
+             <p class="name" id="name1">CAPTAIN<br>AMERICA</p>
+						<a href="wikipages/captainam.html"><img src="captainam.JPG" alt="1"   width="300" height="300"></a>
+					</td>
+		       <td class="img"id="img2">
+             <p class="name" id="name2">BLACK<br>WIDOW</p>
+						 <a href="wikipages/blackwid.html"><img src="black_widow_2.jpg"  alt="2"   width="300" height="300" ></a>
+
+					 </td>
+           <td class="img"id="img3">
+            <p class="name" id="name3">HULK</p>
+             <a href="wikipages/hulk.html"><img src="hulk_1.jpg"  alt="3"   width="300" height="300" ></a>
+					</td>
+					 <td class="img"id="img4">
+             <p class="name" id="name4">THOR</p>
+             <a href="wikipages/thor.html"><img src="thor_1.JPG"  alt="4"   width="300" height="300" >
+					</td>
+		</tr>
+
+		<tr>
+		       <td class="img"id="img5" >
+             <p class="name" id="name5">SCARLET<br>WITCH</p>
+             <a href="wikipages/scarlet.html"><img src="wanda_maximoff.JPG"  alt="5"   width="300" height="300" >
+					</td>
+		       <td class="img"id="img6">
+             <p class="name" id="name6">SPIDER-MAN</p>
+
+             <a href="wikipages/spidey.html"><img src="spider_man.JPG"  alt="6"  width="300" height="300" >
+						</td>
+		       <td class="img"id="img7">
+             <p class="name" id="name7">IRON<br>MAN</p>
+             <a href="wikipages/iron.html"><img src="ironman_1.jpg"  alt="7"   width="300" height="300" >
+						</td>
+					 <td class="img"id="img8">
+             <p class="name" id="name8">DOCTOR<br>STRANGE</p>
+             <a href="wikipages/strange.html"><img src="doctorstrange.JPG"  alt="8"   width="300" height="300" >
+					 </td>
+		</tr>
+
+	</table>
+</center>
+</body>
+
+</html>

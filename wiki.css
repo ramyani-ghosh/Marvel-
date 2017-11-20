@@ -1,0 +1,176 @@
+@font-face {
+    font-family:"BEBAS___" ;
+    src: url("BEBAS___.ttf") ;
+}
+body {
+  background-image: url("backg.gif");
+}
+.home{
+  position:fixed;
+  top:1%;
+  right:0.6%;
+  height:61px;
+  width:60px;
+  padding-bottom: 0.8px;
+  opacity: 0.8;
+  z-index:102;
+
+}
+.b1{
+  position:absolute;
+  left:0;
+  top:0;
+  /*display: inline-block;*/
+  width: 100%;
+  height: auto;
+
+}
+#header .heading{
+  position:absolute;
+  top:-30px;
+  left:0;
+  color:white;
+  font-size: 60px;
+  padding-left: 4px;
+  padding-top: 30px;
+  font-family:"BEBAS___";
+}
+
+#header {
+position:absolute;
+top:-30px;
+left:0;
+width: 100%;
+height:28%;
+padding-top: 20px;
+
+}
+#header .text{
+  position:absolute;
+  top:80px;
+  left:0;
+  color:white;
+  font-size: 27px;
+  padding-left: 4px;
+  padding-top: 30px;
+  font-family:"BEBAS___";
+  opacity: 0.8;
+}
+
+#blackbody{
+  position:absolute;
+  top:210px;
+  width:100%;
+  z-index:-10;
+  background-color: black;
+  opacity: 0.8;
+  padding: 0;
+  border-top: 7px solid white;
+}
+table{
+  position: relative;
+  top:100px;
+  z-index: 5;
+  opacity: 1;
+}
+td{
+    align-items: center;
+}
+
+.img img{
+  margin-bottom: 0px;
+  opacity: 1;
+  z-index: 5;
+}
+.img img:hover{
+  opacity: 0.3;
+}
+
+.img #name1{
+
+  position: absolute;
+  z-index:-1;
+  align-self: center;
+  top:18%;
+  left:7%;
+  font-size: 35px;
+  color:white;
+  font-family:"BEBAS___";
+}
+.img #name2{
+
+  position: absolute;
+  z-index:-1;
+  align-self: center;
+  top:18%;
+  left:33%;
+  font-size: 35px;
+  color:white;
+  font-family:"BEBAS___";
+}
+.img #name3{
+
+  position: absolute;
+  z-index:-1;
+  align-self: center;
+  top:18%;
+  left:59%;
+  font-size: 35px;
+  color:white;
+  font-family:"BEBAS___";
+}
+.img #name4{
+
+  position: absolute;
+  z-index:-1;
+  align-self: center;
+  top:18%;
+  left:85%;
+  font-size: 35px;
+  color:white;
+  font-family:"BEBAS___";
+}
+.img #name5{
+
+  position: absolute;
+  z-index:-1;
+  align-self: center;
+  top:70%;
+  left:7%;
+  font-size: 35px;
+  color:white;
+  font-family:"BEBAS___";
+}
+.img #name6{
+
+  position: absolute;
+  z-index:-1;
+  align-self: center;
+  top:70%;
+  left:29%;
+  font-size: 35px;
+  color:white;
+  font-family:"BEBAS___";
+}
+.img #name7{
+
+  position: absolute;
+  z-index:-1;
+  align-self: center;
+  top:70%;
+  left:59%;
+  font-size: 35px;
+  color:white;
+  font-family:"BEBAS___";
+}
+.img #name8{
+
+  position: absolute;
+  z-index:-1;
+  align-self: center;
+  top:70%;
+  left:82%;
+  font-size: 35px;
+  color:white;
+  font-family:"BEBAS___";
+}

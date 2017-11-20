@@ -1,0 +1,88 @@
+{
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-size: 120%;
+	background-image: url("background1.jpg") ;
+	background-color: black;
+}
+@font-face {
+    font-family:"BEBAS___" ;
+    src: url("BEBAS___.ttf") ;
+}
+h2{
+	  font-family:"BEBAS___" ;
+		color:white;
+		opacity: 1;
+}
+a{
+	color:#f2601d;
+	padding-left: 20px;
+}
+.header {
+
+	width: 40%;
+	margin: 50px auto 0px;
+	color: white;
+	background: black;
+	opacity: 90%;
+	text-align: center;
+		box-shadow: 7px 7px 10px black;
+	border-bottom: none;
+	padding: 20px;
+	opacity: 0.9;
+}
+form, .content {
+	font-family:"BEBAS___" ;
+	color: rgb(230,220,190);
+	width: 40%;
+	margin: 0px auto;
+	padding: 20px;
+		box-shadow: 7px 7px 10px black;
+	background: rgba(26,20,18,0.8);
+
+
+}
+.input-group {
+	margin: 10px 10px 10px 10px;
+}
+
+.input-group label {
+	display: block;
+	text-align: left;
+	margin: 3px;
+}
+.input-group input {
+	height: 30px;
+	width: 93%;
+	padding: 5px 10px;
+	font-size: 16px;
+
+}
+.btn {
+	padding: 10px;
+	font-size: 18px;
+	color: white;
+	background: #f2601d;
+	border: none;
+	font-family:"BEBAS___" ;
+	box-shadow: 2px 2px 3px black;
+
+}
+.error {
+	width: 92%;
+	margin: 0px auto;
+	padding: 10px;
+	border: 1px solid #a94442;
+	color: #a94442;
+	background: #f2dede;
+
+	text-align: left;
+}
+.success {
+	color: #3c763d;
+	background: #dff0d8;
+
+	margin-bottom: 20px;
+}

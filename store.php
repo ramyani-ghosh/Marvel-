@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<?php
+	session_start();
+
+	if (!isset($_SESSION['username'])) {
+		$_SESSION['msg'] = "You must log in first";
+		header('location: login.php');
+	}
+
+	if (isset($_GET['logout'])) {
+		session_destroy();
+		unset($_SESSION['username']);
+		header("location: marvelhome2.php");
+	}
+
+?>
+<html>
+
+	<head>
+		<title>Store</title>
+		<link rel="stylesheet" type="text/css" href="store.css">
+		<link rel="shortcut icon" href="marvelogo.png" >
+		<script src="store.js"> </script>
+	</head>
+
+
+	</body>
+	<a href="marvelhome.php"><img src="home.png"class="home" ></img></a>
+	<a href="addtocart.php"><img src="cart.png"class="cart"  ></img></a>
+	<div class="dispname"><?php echo $_SESSION['username']; ?><img style= "width:40px;height:36px;position:absolute;right:3px;" class= "usericon" src="usericon.png" alt="username"/>
+</div>
+
+		<div id="header">
+			<ul>
+  			<li><a class="active" href="store.php">STORE</a></li>
+				<li><a class="active" href="tshirts.php">T-SHIRTS</a></li>
+				<!--<li><a class="active" href="stationery.html">STATIONERY</a></li>-->
+				<li><a class="active" href="other.php">OTHER</a></li>
+			</ul>
+		</div>
+
+		<div id="offers">
+			<h1>Coming soon...</h1>
+			<p id="text">Special line of comic books.</p>
+			<img class="magimg" src="comics.jpg" alt="Marvel comic books"></img>
+		</div>
+		<center><hr id="line"/>
+		</center>
+		<pre id="featured">Featured  Items:</pre>
+
+		<div id='prod' style="opacity:0;z-index:-1">
+				<div id="prodimg"><img id='prodpic' src="" alt="merch" /></div>
+				<div id='close' onclick="closeproduct()">X</div>
+
+			<div id='desc'>
+
+				<p id='prodtitle'>TITLE</p>
+				<p id='prodabout'>Description</p>
+				<p id='prodprice'>PRICE</p>
+
+				<div id='size'>SIZE:
+				<select name="size">
+					<option value="XS">XS</option>
+					<option value="S">S</option>
+					<option value="M">M</option>
+					<option value="L">L</option>
+					<option value="XL">XL</option>
+				</select>
+				<br>
+
+				</div>
+
+								<a href="bill.html"><button id="confirm" >Proceed to checkout</button></a>
+			</div>
+
+		</div>
+
+
+		<div id="items">
+
+
+			<div class="floating-box"  onclick="productinfo(1)"><img id="image" src="Merch/ironman_tee.jpeg" alt="merch" />
+				<p id="title">Iron Man Heart T-shirt, black</p> <p id="price">Rs.499</p>
+				<p id="about" style="opacity:0;position:fixed;">100% Cotton,printed black t-shirt, round neck,regular fit, half sleeve </p></div>
+
+			<div class="floating-box"  onclick="productinfo2(3)"><img id="image" src="Merch/nb4.jpg"  alt="merch"/>
+					<p id="title">Marvel comics notebook, single-ruled</p> <p id="price">Rs.199</p>
+					<p id="about" style="opacity:0;position:fixed;">A-4 Sized, Grey And White Spiral Hard Bound</p></div>
+
+
+			<div class="floating-box" onclick="productinfo2(5)"><img id="image" src="Merch/spidey_bag.jpg" alt="merch"/>
+					<p id="title">Spider-man school backpack</p> <p id="price">Rs.619</p>
+					<p id="about" style="opacity:0;position:fixed;">Synthetic,Water Proof,Large Backpack With Multiple Pockets</p></div>
+
+
+			<div class="floating-box" onclick="productinfo(7)"><img id="image" src="Merch/drstrange_tee2.jpg" alt="merch"/>
+						<p id="title">Doctor Strange t-shirt</p> <p id="price">Rs.499</p>
+						<p id="about" style="opacity:0;position:fixed;">Purely Cotton,Black T-shirt,Pixelated Print,Short Sleeve</p></div>
+
+
+			<div class="floating-box" onclick="productinfo2(9)"><img id="image" src="Merch/avengers_case.jpg" alt="merch"/>
+							<p id="title">Avengers superheroes phone case</p> <p id="price">Rs.599</p>
+							<p id="about" style="opacity:0;position:fixed;">Cool 3D Printed Soft Poly I-Phone Cover </p></div>
+
+
+			<div class="floating-box" onclick="productinfo(11)"><img id="image" src="Merch/ironman_tee_2.jpg" alt="merch"/>
+							<p id="title">Iron Man T-shirt</p> <p id="price">Rs.559</p>
+							<p id="about" style="opacity:0;position:fixed;">100% Cotton,Red and Yellow T-shirt,Round Neck,Regular Fit, Half Sleeve </p></div>
+
+
+			<div class="floating-box" onclick="productinfo2(13)"><img id="image" src="Merch/ironman_kr.jpg" alt="merch"/>
+						<p id="title">Iron man key chain</p> <p id="price">Rs.304</p>
+						<p id="about" style="opacity:0;position:absolute;;">Stainless Steel,Metallic Finshed KeyChains,Available In Three Colors</p></div>
+
+
+					<div class="floating-box" onclick="productinfo(15)"><img id="image" src="Merch/marvel_tee2.jpg" alt="merch"/>
+							<p id="title">Marvel comics t-shirt, grey</p> <p id="price">Rs.425</p>
+							<p id="about" style="opacity:0;position:fixed;">100% Cotton,Fully Printed Dark Grey T-shirt, Round Neck,Regular Fit, Half Sleeve </p></div>
+
+
+
+
+
+		</div>
+
+
+
+	</body>
+
+</html>
